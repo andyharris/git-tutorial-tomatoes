@@ -1,0 +1,22 @@
+1. Open terminal
+2. Navigate to location (ie cd sites)
+3.a. To clone using default folder: git clone https://github.com/andyharris/git-tutorial-tomatoes.git
+3.b. To clone into custom folder: git clone https://github.com/andyharris/git-tutorial-tomatoes.git name-of-folder
+4. Open folder into VS code and add test.txt
+5. Run git status in terminal to see project (file is untracked) (U icon)
+6.a. To track file, run git add text.txt. In code, file moves to 'Staged Changes'
+6.b. To track all files, run git add . or git add -A or git add --all
+7. To untrack file, run git rm --cached test.txt
+7.b. If a local file is deleted, it will still exist in staged. To sync run: git add .
+8. To commit, run: got commit -m "message"
+8.b. (only for new repos) Possibly need to do this earlier, but to sync branches(?) run: git push -u origin master
+
+BRANCHES
+
+1. To view branches run: git branch
+2. To create branch run: git branch features/navigation
+3. To switch to branch run: git checkout features/navigation (test git switch features/navigation)
+4. After making changes and committing to new branch, switch to master branch with run: git checkout master
+5. To merge branch, run: git merge features/navigation
+6. To push to remote, run: git push
+7. To delete the now redundant branch, run: git branch -d features/navigation
